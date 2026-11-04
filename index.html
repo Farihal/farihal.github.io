@@ -40,8 +40,7 @@
         <li><a href="#rescue"><span class="yr">Project</span><span class="nm">Ride-hailing for flood rescue<small>Mobile app</small></span><span class="go">→</span></a></li>
         <li class="ig">Electric propulsion</li>
         <li><a href="#pmsm"><span class="yr">2023–24</span><span class="nm">Electric boat motor<small>M.Sc. thesis · Next Research, 2026</small></span><span class="go">→</span></a></li>
-        <li class="ig">Medical robotics</li>
-        <li><a href="#microrobot"><span class="yr">Project</span><span class="nm">Wearable control of soft microrobots<small>Gesture control · MIS</small></span><span class="go">→</span></a></li>
+        
       </ul>
     </nav>
   </header>
@@ -53,6 +52,55 @@
   </div>
 
   <div class="panel" role="tabpanel" id="rescue-technology" aria-labelledby="t-rescue" tabindex="-1">
+
+     <!-- ============ R3DIVER ============ -->
+    <section class="project" id="r3diver">
+      <div class="phead">
+        <h2>R3Diver: underwater rescue ROV</h2>
+        <div class="meta"><span class="label">2016 · Co-author</span><span class="label">IEEE TENCON</span></div>
+      </div>
+      <div class="pgrid">
+        <figure style="margin:0">
+          <div class="bench">
+            <div class="stage water" id="st-rov" tabindex="0" role="img" aria-label="Underwater scene with a remotely operated vehicle. Use the buttons or W, S, A, D, R, F, T and G keys to drive.">
+              <div class="readout">
+                <div>depth <b id="rv-d">8.0</b> m · heading <b id="rv-h">000</b>°<br>tether <b id="rv-t">0.0</b> m</div>
+                <div style="text-align:right">detections <b id="rv-n">0</b><br>hull <b id="rv-c">clear</b></div>
+              </div>
+              <div class="inset" id="rv-inset"><canvas id="rv-ov"></canvas><span class="rec">Live feed · CAT6</span></div>
+              <div class="hint">drag to orbit</div>
+            </div>
+            <div class="controls">
+              <div class="dpad" id="rv-pad">
+                <div class="dgroup"><span class="label">Drive</span>
+                  <div class="row"><button class="btn" type="button" data-in="fwd" data-v="1">Forward <kbd>W</kbd></button><button class="btn" type="button" data-in="fwd" data-v="-1">Back <kbd>S</kbd></button></div>
+                  <div class="row"><button class="btn" type="button" data-in="turn" data-v="1">Left <kbd>A</kbd></button><button class="btn" type="button" data-in="turn" data-v="-1">Right <kbd>D</kbd></button></div>
+                </div>
+                <div class="dgroup"><span class="label">Depth</span>
+                  <div class="row"><button class="btn" type="button" data-in="vert" data-v="1">Up <kbd>R</kbd></button><button class="btn" type="button" data-in="vert" data-v="-1">Down <kbd>F</kbd></button></div>
+                  <div class="row"><button class="btn" type="button" data-in="tilt" data-v="1">Nose up <kbd>T</kbd></button><button class="btn" type="button" data-in="tilt" data-v="-1">Nose down <kbd>G</kbd></button></div>
+                </div>
+                <div class="dgroup"><span class="label">Stop</span>
+                  <div class="row"><button class="btn halt" type="button" id="rv-stop">Stop all</button></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption class="cap">Click a button to switch that motion on and click it again to switch it off. Switch on several to combine them, such as Forward with Down to dive while moving. On a keyboard, hold the keys instead. Find the person on the seabed: the live feed marks them when they come into the camera's view. Detection here is simulated geometrically.</figcaption>
+        </figure>
+        <div class="notes">
+          <p class="sum">A remotely operated vehicle for underwater search and rescue, built for about <span class="num">USD 100</span> so that rescue teams with small budgets could afford one.</p>
+          <ul>
+            <li>PVC frame, four thrusters and 3D-printed propellers.</li>
+            <li>Wired USB-over-CAT6 control with live video down to <span class="num">30 m</span>.</li>
+            <li>Automatic human detection in the video feed using HOG and Haar cascade classifiers.</li>
+          </ul>
+          <p class="role"><b>My role:</b> control, thruster design, HMI, vision.</p>
+          <p class="cite">S. A. Fattah, F. Abedin, M. N. Ansary, M. A. Rokib, N. Saha, and C. Shahnaz, <em>“R3Diver: Remote robotic rescue diver for rapid underwater search and rescue operation,”</em> Proc. IEEE TENCON, 2016, pp. 3280–3283.</p>
+        </div>
+      </div>
+    </section>
+    
     <!-- ============ R3ARM ============ -->
     <section class="project" id="r3arm">
       <div class="phead">
@@ -104,53 +152,7 @@
       </div>
     </section>
 
-    <!-- ============ R3DIVER ============ -->
-    <section class="project" id="r3diver">
-      <div class="phead">
-        <h2>R3Diver: underwater rescue ROV</h2>
-        <div class="meta"><span class="label">2016 · Co-author</span><span class="label">IEEE TENCON</span></div>
-      </div>
-      <div class="pgrid">
-        <figure style="margin:0">
-          <div class="bench">
-            <div class="stage water" id="st-rov" tabindex="0" role="img" aria-label="Underwater scene with a remotely operated vehicle. Use the buttons or W, S, A, D, R, F, T and G keys to drive.">
-              <div class="readout">
-                <div>depth <b id="rv-d">8.0</b> m · heading <b id="rv-h">000</b>°<br>tether <b id="rv-t">0.0</b> m</div>
-                <div style="text-align:right">detections <b id="rv-n">0</b><br>hull <b id="rv-c">clear</b></div>
-              </div>
-              <div class="inset" id="rv-inset"><canvas id="rv-ov"></canvas><span class="rec">Live feed · CAT6</span></div>
-              <div class="hint">drag to orbit</div>
-            </div>
-            <div class="controls">
-              <div class="dpad" id="rv-pad">
-                <div class="dgroup"><span class="label">Drive</span>
-                  <div class="row"><button class="btn" type="button" data-in="fwd" data-v="1">Forward <kbd>W</kbd></button><button class="btn" type="button" data-in="fwd" data-v="-1">Back <kbd>S</kbd></button></div>
-                  <div class="row"><button class="btn" type="button" data-in="turn" data-v="1">Left <kbd>A</kbd></button><button class="btn" type="button" data-in="turn" data-v="-1">Right <kbd>D</kbd></button></div>
-                </div>
-                <div class="dgroup"><span class="label">Depth</span>
-                  <div class="row"><button class="btn" type="button" data-in="vert" data-v="1">Up <kbd>R</kbd></button><button class="btn" type="button" data-in="vert" data-v="-1">Down <kbd>F</kbd></button></div>
-                  <div class="row"><button class="btn" type="button" data-in="tilt" data-v="1">Nose up <kbd>T</kbd></button><button class="btn" type="button" data-in="tilt" data-v="-1">Nose down <kbd>G</kbd></button></div>
-                </div>
-                <div class="dgroup"><span class="label">Stop</span>
-                  <div class="row"><button class="btn halt" type="button" id="rv-stop">Stop all</button></div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <figcaption class="cap">Click a button to switch that motion on and click it again to switch it off. Switch on several to combine them, such as Forward with Down to dive while moving. On a keyboard, hold the keys instead. Find the person on the seabed: the live feed marks them when they come into the camera's view. Detection here is simulated geometrically.</figcaption>
-        </figure>
-        <div class="notes">
-          <p class="sum">A remotely operated vehicle for underwater search and rescue, built for about <span class="num">USD 100</span> so that rescue teams with small budgets could afford one.</p>
-          <ul>
-            <li>PVC frame, four thrusters and 3D-printed propellers.</li>
-            <li>Wired USB-over-CAT6 control with live video down to <span class="num">30 m</span>.</li>
-            <li>Automatic human detection in the video feed using HOG and Haar cascade classifiers.</li>
-          </ul>
-          <p class="role"><b>My role:</b> control, thruster design, HMI, vision.</p>
-          <p class="cite">S. A. Fattah, F. Abedin, M. N. Ansary, M. A. Rokib, N. Saha, and C. Shahnaz, <em>“R3Diver: Remote robotic rescue diver for rapid underwater search and rescue operation,”</em> Proc. IEEE TENCON, 2016, pp. 3280–3283.</p>
-        </div>
-      </div>
-    </section>
+   
 
     <!-- ============ ACCIDENT RISK ============ -->
     <section class="project" id="accident">
@@ -285,90 +287,6 @@
     </section>
   </div>
 
-  <div class="panel" role="tabpanel" id="medical" aria-labelledby="t-medical" tabindex="-1" hidden>
-    <!-- ============ MICROROBOT ============ -->
-    <section class="project" id="microrobot">
-      <div class="phead">
-        <h2>Wearable control of soft magnetic microrobots</h2>
-        <div class="meta"><span class="label">Project · Human-in-the-loop control</span><span class="label">Minimally invasive surgery</span></div>
-      </div>
-      <div class="pgrid">
-        <figure style="margin:0">
-          <div class="bench">
-            <div class="stage" id="st-mr" role="img" aria-label="3D blood vessel with a soft magnetic microrobot, surrounded by electromagnetic coils, plus a fluoroscopy display inset.">
-              <div class="readout">
-                <div>simulated loop delay <b id="mr-tl">727</b> ms · coils <b id="mr-state">hold</b><br><span id="mr-truth">orange = surgeon's display</span></div>
-                <div style="text-align:right">payload <b id="mr-pay">loaded</b><br>speed <b id="mr-v">0.00</b> mm/s</div>
-              </div>
-              <div class="inset" id="mr-inset"><canvas id="mr-fl"></canvas><span class="rec">Fluoroscopy · display</span></div>
-              <div class="hint">drag to rotate</div>
-            </div>
-
-            <div class="task">
-              <button class="btn primary" type="button" id="mr-task">Start the challenge</button>
-              <p class="tnote" id="mr-tres" aria-live="polite">Deliver the payload to the green target using only the delayed X-ray display: <b>Steer</b> there, <b>Hold</b> on the target, then <b>Release</b>. Within ±1&nbsp;mm counts as on target.</p>
-            </div>
-            <div class="controls">
-              <div class="gest" role="group" aria-label="Wearable gestures">
-                <button class="btn gb" type="button" data-g="steer"><b>Steer</b><small>point · <kbd>1</kbd></small></button>
-                <button class="btn gb" type="button" data-g="hold"><b>Hold</b><small>flat palm · <kbd>2</kbd></small></button>
-                <button class="btn gb" type="button" data-g="release"><b>Release</b><small>open hand · <kbd>3</kbd></small></button>
-              </div>
-              <div class="gest-side">
-                <span class="seg" role="group" aria-label="Steer direction"><button class="btn" type="button" data-hd="1" aria-pressed="true">Steer forward</button><button class="btn" type="button" data-hd="-1" aria-pressed="false">Steer backward</button></span>
-              </div>
-            </div>
-
-            <div class="pipe" aria-label="Command path">
-              <span class="pst" data-p="0">Armband<small>sEMG + IMU</small></span><span class="parr">→</span>
-              <span class="pst" data-p="1">Decoder</span><span class="parr">→</span>
-              <span class="pst" data-p="2">Field controller</span><span class="parr">→</span>
-              <span class="pst" data-p="3">Coils</span>
-              <p class="pmsg" id="mr-pmsg" aria-live="polite">No command in flight</p>
-            </div>
-
-            <div class="controls">
-              <label class="slider" for="mr-speed">Steer speed <input id="mr-speed" type="range" min="0.4" max="2.4" step="0.1" value="1.2"><output id="mr-speed-o">1.2 mm/s</output></label>
-            </div>
-            <div class="controls">
-              <div class="dpad">
-                <div class="dgroup"><span class="label">X-ray fluoroscopy</span>
-                  <div class="row">
-                    <span class="seg" role="group" aria-label="Fluoroscopy frame rate"><button class="btn" type="button" data-fps="15" aria-pressed="true">15 frames/s</button><button class="btn" type="button" data-fps="7.5" aria-pressed="false">7.5 frames/s</button></span>
-                    <button class="btn" type="button" id="mr-xray" aria-pressed="false">Interrupt X-ray</button>
-                  </div>
-                </div>
-                <div class="dgroup"><span class="label">Gesture decoding</span>
-                  <div class="row">
-                    <span class="seg" role="group" aria-label="Decoding speed"><button class="btn" type="button" data-tc="410" aria-pressed="true">Standard</button><button class="btn" type="button" data-tc="150" aria-pressed="false">Faster</button></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="budget-wrap">
-              <div class="budget" id="mr-budget" aria-label="Loop delay budget"></div>
-              <p class="bnote" id="mr-bnote"></p>
-            </div>
-
-            <div class="plotwrap">
-              <p class="label">Your challenge results</p>
-              <canvas id="mr-plot" aria-label="Your challenge results: release error against steer speed"></canvas>
-            </div>
-          </div>
-          <figcaption class="cap">Every gesture travels through the decoder and field controller before the coils act, and the display only shows the robot as it was a moment ago. The faster the robot moves, the further it travels before your Hold reaches it. All delays, noise and thresholds in this simulation are illustrative settings, not measurements.</figcaption>
-        </figure>
-        <div class="notes">
-          <p class="sum">A project on steering soft magnetic microrobots inside the body with a forearm-worn armband instead of a console. The surgeon's hand gestures are decoded from muscle signals, turned into magnetic fields, and checked against live X-ray images.</p>
-          <ul>
-            <li>Four parts working together: a modular soft microrobot, built from small hydrogel units carrying magnetic particles that move as one body, a wearable armband that reads muscle signals and wrist motion, electromagnetic coils around the patient, and X-ray fluoroscopy to see the robot.</li>
-            <li>Three gesture commands: <b>steer</b> moves the robot along the surgeon's pointing direction, <b>hold</b> pins it against the vessel wall, and <b>release</b> delivers its payload at the target.</li>
-            <li>Designed around delay: the surgeon steers from an X-ray image that is always slightly out of date, and each gesture takes time to decode. Gestures the decoder isn't sure about default to hold, and the robot holds automatically if imaging is lost.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </div>
 
   <section class="contact" id="contact">
     <h2>Get in<br>touch</h2>
