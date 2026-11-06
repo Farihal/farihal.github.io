@@ -32,21 +32,22 @@
       </dl>
     </div>
     <nav aria-label="Project index">
-      <p class="label" style="margin-bottom:8px">Projects</p>
+      <p class="label" style="margin-bottom:8px"><b>Projects</b></p>
       <ul class="index">
         <li class="ig">Rescue technology</li>
-        <li><a href="#r3arm"><span class="yr">2017</span><span class="nm">R3Arm rescue arm<small>IEEE R10-HTC</small></span><span class="go">→</span></a></li>
-        <li><a href="#r3diver"><span class="yr">2016</span><span class="nm">R3Diver rescue ROV<small>IEEE TENCON</small></span><span class="go">→</span></a></li>
-        <li><a href="#rescue"><span class="yr">Project</span><span class="nm">Ride-hailing for flood rescue<small>Mobile app</small></span><span class="go">→</span></a></li>
+        
+        <li><a href="#r3diver"><span class="yr">2016</span><span class="nm">Low-cost underwater ROV<small>IEEE TENCON</small></span><span class="go">→</span></a></li>
+        <li><a href="#r3arm"><span class="yr">2017</span><span class="nm">Gesture-controlled robotic arm<small>IEEE R10-HTC</small></span><span class="go">→</span></a></li>
+        <li><a href="#rescue"><span class="yr">2014</span><span class="nm">Ride-hailing app for flood rescue<small> Smarter Planet Challenge Student Competition</small></span><span class="go">→</span></a></li>
         <li class="ig">Electric propulsion</li>
-        <li><a href="#pmsm"><span class="yr">2023–24</span><span class="nm">Electric boat motor<small>M.Sc. thesis · Next Research, 2026</small></span><span class="go">→</span></a></li>
+        <li><a href="#pmsm"><span class="yr">2023–24</span><span class="nm">Electric boat motor<small>M.Sc. thesis · First author publication, Next Research, 2026</small></span><span class="go">→</span></a></li>
         
       </ul>
     </nav>
   </header>
 
   <div class="tabs" role="tablist" aria-label="Research areas" lang="en">
-    <button class="tab" type="button" role="tab" id="t-rescue" aria-controls="rescue-technology" aria-selected="true">Rescue technology<small>4 projects</small></button>
+    <button class="tab" type="button" role="tab" id="t-rescue" aria-controls="rescue-technology" aria-selected="true">Rescue technology<small>3 projects</small></button>
     <button class="tab" type="button" role="tab" id="t-propulsion" aria-controls="propulsion" aria-selected="false" tabindex="-1">Electric propulsion<small>1 project</small></button>
     
   </div>
@@ -56,7 +57,7 @@
      <!-- ============ R3DIVER ============ -->
     <section class="project" id="r3diver">
       <div class="phead">
-        <h2>R3Diver: underwater rescue ROV</h2>
+        <h2>R3Diver: underwater ROV for rapid search and rescue</h2>
         <div class="meta"><span class="label">2016 · Co-author</span><span class="label">IEEE TENCON</span></div>
       </div>
       <div class="pgrid">
@@ -86,17 +87,17 @@
               </div>
             </div>
           </div>
-          <figcaption class="cap">Click a button to switch that motion on and click it again to switch it off. Switch on several to combine them, such as Forward with Down to dive while moving. On a keyboard, hold the keys instead. Find the person on the seabed: the live feed marks them when they come into the camera's view. Detection here is simulated geometrically.</figcaption>
+          <figcaption class="cap">Click a button to switch that motion on and click it again to switch it off. Switch on several to combine them, such as Forward with Down to dive while moving. On a keyboard, hold the keys instead. Find the person on the seabed: the live feed marks them when they come into the camera's view.</figcaption>
         </figure>
         <div class="notes">
-          <p class="sum">A remotely operated vehicle for underwater search and rescue, built for about <span class="num">USD 100</span> so that rescue teams with small budgets could afford one.</p>
+          <p class="sum">A remotely operated vehicle for underwater search and rescue, built for about USD 100</span> so that rescue teams with small budgets could afford one.</p>
           <ul>
             <li>PVC frame, four thrusters and 3D-printed propellers.</li>
-            <li>Wired USB-over-CAT6 control with live video down to <span class="num">30 m</span>.</li>
+            <li>Wired signal control with live video down to 30 m</span>.</li>
             <li>Automatic human detection in the video feed using HOG and Haar cascade classifiers.</li>
           </ul>
           <p class="role"><b>My role:</b> control, thruster design, HMI, vision.</p>
-          <p class="cite">S. A. Fattah, F. Abedin, M. N. Ansary, M. A. Rokib, N. Saha, and C. Shahnaz, <em>“R3Diver: Remote robotic rescue diver for rapid underwater search and rescue operation,”</em> Proc. IEEE TENCON, 2016, pp. 3280–3283.</p>
+          <p class="cite">S. A. Fattah, F. Abedin, M. N. Ansary, M. A. Rokib, N. Saha, and C. Shahnaz, <em>“R3Diver: Remote robotic rescue diver for rapid underwater search and rescue operation,”</em> Proc. IEEE TENCON, 2016, pp. 3280–3283. DOI: <span class="num">10.1109/TENCON.2016.7848658</span></p>
         </div>
       </div>
     </section>
@@ -104,7 +105,7 @@
     <!-- ============ R3ARM ============ -->
     <section class="project" id="r3arm">
       <div class="phead">
-        <h2>R3Arm: gesture-controlled rescue arm</h2>
+        <h2>R3Arm: gesture-controlled robotic arm for remote rescue</h2>
         <div class="meta"><span class="label">2017 · Co-author</span><span class="label">IEEE R10-HTC</span></div>
       </div>
       <div class="pgrid">
@@ -137,67 +138,28 @@
               </div>
             </div>
           </div>
-          <figcaption class="cap">Your task: pick up the orange crate and carry it to the blue drop zone. Tilt the pad like a finger-mounted accelerometer (left/right swings the arm, up/down moves the shoulder), use the slider for the elbow, and drive the base with the buttons or arrow keys. Close the gripper over the crate, drive to the zone, and open it. The radio packet format shown is illustrative.</figcaption>
+          <figcaption class="cap">Your task: pick up the orange crate and carry it to the blue drop zone. Tilt the pad like a finger-mounted accelerometer (left/right swings the arm, up/down moves the shoulder), use the slider for the elbow, and drive the base with the buttons or arrow keys. Close the gripper over the crate, drive to the zone, and open it.</figcaption>
         </figure>
         <div class="notes">
           <p class="sum">A low-cost, modular robotic arm for remote rescue work, driven by hand gestures instead of a joystick so an operator can control it naturally from a distance.</p>
           <ul>
             <li>3-DOF arm on a mobile base, controlled by finger-mounted accelerometers.</li>
-            <li>Gesture data sent wirelessly over an <span class="num">nRF24L01</span> link.</li>
+            <li>Gesture data sent wirelessly over an nRF24L01</span> link.</li>
             <li>Live smartphone video lets the operator work without line of sight.</li>
           </ul>
           <p class="role"><b>My role:</b> gesture acquisition, firmware, mechanical design.</p>
-          <p class="cite">P. P. Sarker, F. Abedin, and F. N. Shimim, <em>“R3Arm: Gesture controlled robotic arm for remote rescue operation,”</em> Proc. IEEE Region 10 Humanitarian Technology Conf. (R10-HTC), 2017, pp. 428–431.</p>
+          <p class="cite">P. P. Sarker, F. Abedin, and F. N. Shimim, <em>“R3Arm: Gesture controlled robotic arm for remote rescue operation,”</em> Proc. IEEE Region 10 Humanitarian Technology Conf. (R10-HTC), 2017, pp. 428–431. DOI: <span class="num"> 10.1109/R10-HTC.2017.8288991</span></p>
         </div>
       </div>
     </section>
 
-   
 
-    <!-- ============ ACCIDENT RISK ============ -->
-    <section class="project" id="accident">
-      <div class="phead">
-        <h2>Accident risk from live traffic video</h2>
-        <div class="meta"><span class="label">Computer vision · OpenCV</span><span class="label">Vehicle-to-vehicle &amp; vehicle-to-human</span></div>
-      </div>
-      <div class="pgrid">
-        <figure style="margin:0">
-          <div class="bench">
-            <div class="stage" id="st-acc" role="img" aria-label="3D road junction with cars and pedestrians, a CCTV feed inset and live collision-risk readings.">
-              <div class="readout">
-                <div>CCTV · junction feed<br>east–west signal <b id="ac-sig">green</b></div>
-                <div style="text-align:right">V2V risk <b id="ac-v2v">0%</b><br>V2H risk <b id="ac-v2h">0%</b><br>alerts <b id="ac-alerts">0</b></div>
-              </div>
-              <div class="inset" id="ac-inset"><canvas id="ac-ov"></canvas><span class="rec">CCTV · OpenCV</span></div>
-              <div class="hint">drag to rotate</div>
-            </div>
-            <div class="controls">
-              <button class="btn" type="button" id="ac-run">Car runs a red light</button>
-              <button class="btn" type="button" id="ac-jay">Pedestrian crosses mid-road</button>
-              <button class="btn" type="button" id="ac-pause" aria-pressed="false">Pause</button>
-            </div>
-            <div class="controls">
-              <label class="slider" for="ac-speed">Traffic speed <input id="ac-speed" type="range" min="50" max="160" step="5" value="100"><output id="ac-speed-o">1.00×</output></label>
-            </div>
-          </div>
-          <figcaption class="cap">Every tracked car and person gets a box in the CCTV feed. When two of them move towards each other, a line joins them showing the risk of a collision: green is low, amber is rising, red is an alert. Traffic drives on the left, as in Bangladesh. The risk formula here is a simplified stand-in for the one in my system.</figcaption>
-        </figure>
-        <div class="notes">
-          <p class="sum">A computer-vision system that watches a live traffic camera and estimates how likely vehicles are to hit each other or a pedestrian, so a warning can go out before the accident happens.</p>
-          <ul>
-            <li>Detects vehicles and people in each frame of a live video feed and tracks them as they move, using OpenCV.</li>
-            <li>Measures how close each pair of moving objects gets and turns that into a collision probability.</li>
-            <li>Covers both vehicle-to-vehicle and vehicle-to-human accidents.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
 
     <!-- ============ FLOOD RESCUE ============ -->
     <section class="project" id="rescue">
       <div class="phead">
-        <h2>Ride-hailing for flood rescue</h2>
-        <div class="meta"><span class="label">Mobile app · Disaster response</span><span class="label">Floods</span></div>
+        <h2>Ride-hailing mobile app for flood rescue operations</h2>
+        <div class="meta"><span class="label">2014 · Smarter Planet Challenge · Efficient disaster response</span></div>
       </div>
       <div class="pgrid">
         <figure style="margin:0">
@@ -224,10 +186,10 @@
               </div>
             </div>
           </div>
-          <figcaption class="cap">Tap any house to raise an SOS from its roof. Each boat seats 20, so trips are shared, like a pooled ride: a new SOS joins the boat that can collect it with the least extra travel, as long as nobody already on board rides more than 30 minutes and no booked family is delayed by more than 8. Families are never split. If no boat has room, the request waits in a queue, oldest first. Boats plan their routes around houses, trees and the shelter island. In this demo, one second stands for one minute.</figcaption>
+          <figcaption class="cap">Tap any house to raise an SOS from its roof. Each boat can accomodate 20 people (an arbitrary number). Trips are shared, like a pooled ride. A new SOS is routed to the boat that can answer it with the least extra travel. Families are never split. If no boat has room, the request waits in a queue (oldest first).</figcaption>
         </figure>
         <div class="notes">
-          <p class="sum">An app that works like Uber for flood rescue: stranded people request help from their phones, and the nearest available rescue team is sent to them.</p>
+          <p class="sum">A mobile application that works like a ride-hailing app, except for flood rescue. Stranded people request help from their phones, and the nearest available rescue team is dispatched to them.</p>
           <ul>
             <li>People caught in a flood send an SOS with their location.</li>
             <li>The app matches each request with the nearest free rescue team, the way a ride-hailing app matches a rider with a driver.</li>
@@ -266,22 +228,22 @@
               <canvas id="pm-cogc" aria-label="Cogging torque against rotor position, with and without rotor skew, from Fig. 6 of the paper"></canvas>
             </div>
           </div>
-          <figcaption class="cap">Switching the skew isolates the magnets so you can see the three slices step around the rotor, with a yellow line marking each magnet row. The chart shows the effect: cogging torque at the rotor's current position, with and without skew. The curves are read from Fig. 6 of the paper (a point every 1.5°, smoothed between them) and repeat every 15°. The paper doesn't give the skew angle, so the model assumes one cogging period (7.5°) split into three 2.5° steps. The rotor turns slowly so you can follow it on the chart. Pick a component to see it on its own, or Whole motor to see everything.</figcaption>
+          <figcaption class="cap">Pick a component to see it on its own, or the whole motor to see everything. In exploded view, switching the skew on enables to see the three-step skewed magnets around the rotor. The chart shows the magnitude of cogging torque at the rotor's current position, with and without skew.</figcaption>
         </figure>
         <div class="notes">
-          <p class="sum">A 12 kW interior permanent-magnet motor designed as a drop-in replacement for the single-cylinder diesel engines that power boats on Bangladesh's inland waterways.</p>
+          <p class="sum">A 12 kW interior permanent-magnet motor designed as a drop-in replacement for the single-cylinder diesel engines that power boats in rural inland waterways.</p>
           <div class="specs">
             <div><strong>&gt;93<small>%</small></strong><span>efficiency at rated and peak torque (target 92%)</span></div>
-            <div><strong>59<small>%</small></strong><span>less peak cogging torque from three-step rotor skew, 1.672 → 0.675 N·m</span></div>
+            <div><strong>59<small>%</small></strong><span>less peak cogging torque after applying three-step rotor skew, 1.672 → 0.675 N·m</span></div>
             <div><strong>93.81<small>%</small></strong><span>energy utilization over the ISO 8178-4 E5 duty cycle</span></div>
             <div><strong>7.85</strong><span>rotor safety factor at 110% of maximum speed</span></div>
           </div>
           <ul>
-            <li>Designed in ANSYS Motor-CAD: 48 slots, 8 poles, V-shaped NdFeB magnets and water-jacket cooling, matched to the legacy engines' 2200 rpm operating point.</li>
-            <li>Electromagnetic, mechanical and thermal analysis. Peak cogging torque 1.3% of rated, torque ripple <span class="num">7.32%</span>, <span class="num">52.10 N·m</span> at 2200 rpm.</li>
-            <li>Built from 180 mm stator and 114 mm rotor laminations of M19 steel, with an 87 mm stack, a 1 mm air gap, N42UH sintered NdFeB magnets and eight rotor cooling ducts.</li>
+            <li>Designed in ANSYS Motor-CAD: 48 slots, 8 poles, single layer V-shaped NdFeB magnets and water-jacket cooling, matched to the legacy engines' 2200 rpm operating point.</li>
+            <li>Electromagnetic, mechanical and thermal analysis; peak cogging torque 1.3% of rated torque, torque ripple 7.32%</li>
+            <li>Modeled with 180 mm stator and 114 mm rotor, laminations of M19 steel, an 87 mm stack, a 1 mm air gap, N42UH sintered NdFeB magnets and eight rotor cooling ducts.</li>
           </ul>
-          <p class="cite">F. Abedin and M. Z. R. Khan, <em>“Design and Analysis of a Permanent Magnet Synchronous Motor for Sustainable Rural Water Transportation,”</em> Next Research, 2026, p. 101589. Supervisor: Prof. Md. Ziaur Rahman Khan.</p>
+          <p class="cite">F. Abedin and M. Z. R. Khan, <em>“Design and Analysis of a Permanent Magnet Synchronous Motor for Sustainable Rural Water Transportation,”</em> Next Research, 2026, p. 101589. DOI: <span class="num">10.1016/j.nexres.2026.101589</span></p>
         </div>
       </div>
     </section>
